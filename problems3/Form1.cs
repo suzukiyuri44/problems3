@@ -34,10 +34,10 @@ namespace problems3
         {
             int height;
             int weigth;
-            public TestInfo(string name, int age, int height, int weigth) : base(name, age)
+            public TestInfo(string name, int age, int height, int weight) : base(name, age)
             {
                 this.height = height;
-                this.weigth = weigth;
+                this.weigth = weight;
                 Console.WriteLine("派生クラス");
                 Console.WriteLine("身長：" + height + " , 体重：" + weigth);
             }
@@ -49,6 +49,7 @@ namespace problems3
             TestPerson objTestPerson = new TestPerson("山田",20);
 
             TestInfo objTestInfo = new TestInfo("山田", 20,170, 60);
+
         }
     }
 }
